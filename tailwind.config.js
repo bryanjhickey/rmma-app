@@ -1,0 +1,30 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+module.exports = {
+ content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+   theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Gotham Pro', ...defaultTheme.fontFamily.sans],
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem',
+        },
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+}
