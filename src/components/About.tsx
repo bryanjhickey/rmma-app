@@ -42,7 +42,10 @@ export default function About() {
           <StaticImage
             className="lg:ml-32"
             src="../assets/images/RMMA-0010.jpg"
-            alt="Aboriginal Flag"
+            alt="Jamie Murray and John Mirrabella in their gi's at renegade mma"
+            placeholder="blurred"
+            width={758}
+            height={505}
           />
         </div>
       </div>

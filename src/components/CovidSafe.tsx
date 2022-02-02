@@ -10,6 +10,9 @@ export default function CovidSafe() {
             className="object-fill"
             src="../assets/images/clean-gym.jpeg"
             alt="Renegade MMA Covid Clean Gym"
+            placeholder="blurred"
+            width={673}
+            height={484}
           />
         </div>
         <div className="col-span-1">
