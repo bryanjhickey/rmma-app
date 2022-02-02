@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-gray-200">
       <Contact />
       <div className="container border-t-2 border-solid border-gray-300">
-        <div className="grid grid-cols-1 md:grid-cols-4 place-items-start md:place-items-end py-24">
+        <div className="grid grid-cols-1 place-items-start py-24 md:grid-cols-4 md:place-items-end">
           <div className="col-span-1 md:col-span-2">
             <AcknowledgementOfCountry />
           </div>
@@ -28,7 +28,7 @@ export default function Footer() {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-gray-700 hover:text-green-600 text-"
+                className="text- text-gray-700 hover:text-green-600"
               >
                 <span className="sr-only">Instagram</span>
                 <FaInstagram size={24} />

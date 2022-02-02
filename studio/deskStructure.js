@@ -1,9 +1,9 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { GoFlame, GoMilestone, GoMortarBoard, GoHome, GoSettings } from "react-icons/go"
+import { GoFlame, GoMilestone, GoMortarBoard, GoMegaphone, GoHome, GoSettings } from "react-icons/go"
 
 // const hiddenTypes = ['companyInfo', 'siteSettings', 'classList']
 const hiddenDocTypes = (listItem) =>
-  !['companyInfo', 'siteSettings', 'classList', 'membershipBenefits', 'banner'].includes(
+  !['companyInfo', 'siteSettings', 'classList', 'membershipBenefits', 'banner', 'testimony'].includes(
     listItem.getId()
   )
 export default () =>
@@ -46,6 +46,13 @@ export default () =>
           .icon(GoMilestone)
           .child(
             S.documentTypeList('banner')
+          ),
+        S.listItem()
+          .title('Testimonies')
+          .schemaType('testimony')
+          .icon(GoMegaphone)
+          .child(
+            S.documentTypeList('testimony')
           ),
 
       ...S.documentTypeListItems().filter(hiddenDocTypes),

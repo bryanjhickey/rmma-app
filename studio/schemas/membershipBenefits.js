@@ -11,7 +11,7 @@ export default {
     {
       name: 'shortDescription',
       title: 'Description of Benefit',
-      type: 'string',
+      type: 'text',
     },
   ],
 }

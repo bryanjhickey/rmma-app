@@ -36,4 +36,17 @@ export default {
       type: 'blockContent',
     },
   ],
+  preview: {
+    select: {
+      title: 'title',
+      date: '_updatedAt'
+    },
+    prepare(selection) {
+      const {title, date} = selection
+      return {
+        title: title,
+        subtitle: date
+      }
+    }
+  }
 }

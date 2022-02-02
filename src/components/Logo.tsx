@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Logo() {
   return (
-    <div className="w-16 md:w-20 xl:w-24 h-auto mx-auto">
+    <div className="mx-auto h-auto w-16 md:w-20 xl:w-24">
       <svg viewBox="0 0 69 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M24.0945 38.5749L10.687 36.5484L10.3213 33.1665L24.0945 38.5749Z"

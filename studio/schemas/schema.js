@@ -11,6 +11,7 @@ import banner from './banner'
 import membershipBenefits from './membershipBenefits'
 import siteSettings from './siteSettings'
 import companyInfo from './companyInfo'
+import testimony from './testimony'
 
 
 
@@ -29,6 +30,7 @@ export default createSchema({
     membershipBenefits,
     siteSettings,
     companyInfo,
+    testimony,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

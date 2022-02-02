@@ -11,7 +11,7 @@ export default function About() {
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
             Our Story
           </h2>
-          <p className="text-xl mb-2">
+          <p className="mb-2 text-xl">
             Renegade is home to people training in Brazilian Jiu Jitsu and Mixed
             Martial Arts.
           </p>
@@ -26,7 +26,7 @@ export default function About() {
           <p className="mb-4">
             <Link
               to="about"
-              className="underline text-sm font-normal hover:text-green-600"
+              className="text-sm font-normal underline hover:text-green-600"
             >
               Find out more about our story and values &rarr;
             </Link>
