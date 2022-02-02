@@ -4,7 +4,8 @@ require('dotenv').config({
 });
 
 // And then you can use the config in gatsby-config.js
-const config = require('gatsby-plugin-config');
+
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
@@ -14,7 +15,8 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp', // Needed for dynamic images
-     {
+    'gatsby-plugin-react-helmet',
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
@@ -28,9 +30,10 @@ module.exports = {
         projectId: process.env.SANITY_PROJECT_ID,
         dataset: process.env.SANITY_DATASET,
         token: process.env.SANITY_TOKEN,
-        watch: true,
+        watchMode: !isProd,
+        overlayDrafts: !isProd,
         graphqlTag: 'default',
-      }
-    }
+      },
+    },
   ],
 };

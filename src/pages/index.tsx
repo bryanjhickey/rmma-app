@@ -4,6 +4,7 @@ import CovidSafe from '@/components/CovidSafe';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import Memberships from '@/components/Memberships';
+import Seo from '@/components/Seo';
 import { graphql } from 'gatsby';
 import React from 'react';
 
@@ -11,8 +12,20 @@ export default function Home({ data }) {
   const { hero } = data;
   const classList = data.classList.nodes;
   const memberships = data.memberships.nodes;
+  const { site } = data;
+
   return (
     <Layout>
+      <Seo
+        description={site.description || ``}
+        lang={site.lang || ``}
+        meta={site.meta || ``}
+        keywords={site.keywords || []}
+        title={site.title || ``}
+        image={site.image || ``}
+        bodyAttr={site.bodyAttr || ``}
+        gradient={site.gradient || ``}
+      />
       <Hero hero={hero} />
       <About />
       <Memberships memberships={memberships} />
@@ -51,6 +64,12 @@ export const query = graphql`
         title
         shortDescription
       }
+    }
+    site: sanitySiteSettings {
+      title
+      keywords
+      description
+      author
     }
   }
 `;
