@@ -18,7 +18,7 @@ export default function Home({ data }) {
     <Layout>
       <Seo
         description={site.description || ``}
-        lang={site.lang || ``}
+        lang={site.lang || `en`}
         meta={site.meta || ``}
         keywords={site.keywords || []}
         title={site.title || ``}

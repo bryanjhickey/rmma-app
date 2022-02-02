@@ -12,6 +12,7 @@ module.exports = {
   // don't need to define it here (just if you need to change the options)
   plugins: [
     'gatsby-plugin-postcss',
+    'gatsby-plugin-preload-fonts',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp', // Needed for dynamic images
