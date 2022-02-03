@@ -18,7 +18,9 @@ export default function Contact() {
               <p className="mt-4 mb-2 md:mt-0">
                 <a
                   className="underline hover:text-green-600"
-                  href="http://https://www.google.com/maps/place/Renegade+MMA+%26+BJJ/@-37.7907227,144.9353733,15z/data=!4m2!3m1!1s0x0:0xfa85d323f5f6f44?sa=X&ved=2ahUKEwikoKz8i931AhX-TWwGHQ9iAuEQ_BJ6BAg4EAU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.google.com/maps/place/Renegade+MMA+%26+BJJ/@-37.7907227,144.9331846,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad65d191140a833:0xfa85d323f5f6f44!8m2!3d-37.7907227!4d144.9353733"
                 >
                   Google Map
                 </a>

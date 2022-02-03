@@ -37,14 +37,11 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query homePageQuery {
-    classList: allSanityClassList(sort: { order: DESC, fields: _updatedAt }) {
+    classList: allSanityClassList(sort: { fields: orderRank, order: ASC }) {
       nodes {
         id
         title
-        shortDescription
-        slug {
-          current
-        }
+        overview
       }
     }
     hero: sanityBanner(_id: { eq: "e41971a1-046b-4dde-bf72-319fdcef2d3e" }) {

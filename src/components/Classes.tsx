@@ -1,48 +1,5 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-
-function ClassCard({ session }) {
-  const controls = useAnimation();
-  const { ref, inView } = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start(`visible`);
-    }
-  }, [controls, inView]);
-
-  const CardVariants = {
-    hidden: {
-      opacity: 0,
-      x: `-80px`,
-    },
-    visible: {
-      opacity: 0.9,
-      x: `0px`,
-      transition: {
-        duration: 0.75,
-      },
-    },
-  };
-
-  return (
-    <motion.li
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      transition={{ type: `spring` }}
-      variants={CardVariants}
-      // whileHover={{ scale: 1.05, transition: { duration: 0.5 } }}
-      className="overflow-hidden"
-    >
-      <div className="mr-12 py-12 text-lg leading-6">
-        <h3 className="mb-2 font-bold text-green-500">{session.title}</h3>
-        <p className="text-base text-gray-100">{session.shortDescription}</p>
-      </div>
-    </motion.li>
-  );
-}
+import React from 'react';
+import { TextCard } from './TextCard';
 
 export default function ClassesList({ sessions }) {
   return (
@@ -60,11 +17,16 @@ export default function ClassesList({ sessions }) {
             to Sunday - there is a class waiting for you.
           </p>
         </div>
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-y-12 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-3">
           {sessions.map((session) => (
-            <ClassCard key={session.id} session={session} />
+            <TextCard
+              id={session.id}
+              title={session.title}
+              overview={session.overview}
+              darkSection
+            />
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

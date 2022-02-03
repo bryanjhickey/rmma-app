@@ -1,8 +1,16 @@
+import {
+  orderRankField,
+  orderRankOrdering,
+} from '@sanity/orderable-document-list';
+
 export default {
   name: 'classList',
   title: 'Classes',
   type: 'document',
+    orderings: [orderRankOrdering],
+
   fields: [
+    orderRankField({ type: 'title' }),
     {
       name: 'title',
       title: 'Title',
@@ -26,9 +34,9 @@ export default {
       },
     },
     {
-      name: 'shortDescription',
-      title: 'Short Class Description',
-      type: 'string',
+      name: 'overview',
+      title: 'Class Overview',
+      type: 'text',
     },
     {
       name: 'fullDescription',

@@ -1,4 +1,6 @@
 import S from '@sanity/desk-tool/structure-builder'
+import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
+
 import { GoFlame, GoMilestone, GoMortarBoard, GoMegaphone, GoHome, GoSettings } from "react-icons/go"
 
 // const hiddenTypes = ['companyInfo', 'siteSettings', 'classList']
@@ -54,6 +56,6 @@ export default () =>
           .child(
             S.documentTypeList('testimony')
           ),
-
+          orderableDocumentListDeskItem({type: 'classList', title: 'Order Classes for Display', hidden: false}),
       ...S.documentTypeListItems().filter(hiddenDocTypes),
     ])
