@@ -14,15 +14,15 @@ export default function About() {
             Renegade is home to people training in Brazilian Jiu Jitsu and Mixed
             Martial Arts.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-base">
             Founded in 2010 by Jamie Murray and John Mirrabella, the academy is
             a community that celebrates people and culture, skill development
             and great training experiences.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-base">
             People come for the training but they stay for the community.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-base">
             Our instructors have decades of experience in coaching and are black
             belts in Brazilian Jiu Jitsu. Their passion for martial arts is only
             surpassed by their joy in seeing all students find new skills and

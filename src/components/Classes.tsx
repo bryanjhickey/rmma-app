@@ -17,7 +17,7 @@ export default function ClassesList({ sessions }) {
             to Sunday - there is a class waiting for you.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-y-12 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-y-12 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-3">
           {sessions.map((session) => (
             <TextCard
               id={session.id}

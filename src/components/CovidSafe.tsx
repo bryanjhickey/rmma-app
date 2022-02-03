@@ -20,10 +20,10 @@ export default function CovidSafe() {
             <h2 className="text-sm font-semibold uppercase tracking-wider text-gray-900">
               our commitment to cleanliness
             </h2>
-            <p className="mt-2 text-xl font-extrabold tracking-tight text-white sm:text-4xl md:text-3xl">
+            <p className="mt-2 text-4xl font-extrabold tracking-tight text-white sm:text-4xl md:text-3xl">
               COVID-19 Clean
             </p>
-            <p className="mt-3 text-sm text-white md:text-base lg:text-xl">
+            <p className="mt-3 text-base text-white md:text-base lg:text-xl">
               The impacts of COVID-19 are significant for all martial arts
               academies. Being closed for business and more importantly limited
               in the ways we could connect with our team hurt. That’s why we are

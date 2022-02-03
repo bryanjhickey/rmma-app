@@ -20,7 +20,7 @@ export default function Memberships({ memberships }) {
       </div>
       <div className="mb-24 grid grid-cols-1 gap-x-12 gap-y-12 lg:grid-cols-2 lg:gap-x-12 xl:grid-cols-3">
         <div className="col-span-1 xl:col-span-2">
-          <div className="grid grid-cols-1 text-gray-700 md:grid-cols-2 md:gap-x-12 md:gap-y-24">
+          <div className="grid grid-cols-1 gap-y-12 text-gray-700 md:grid-cols-2 md:gap-x-12 md:gap-y-24">
             {memberships.map((membership) => (
               <TextCard
                 id={membership.id}
@@ -39,6 +39,9 @@ export default function Memberships({ memberships }) {
             <div className="mt-4 -ml-8 flex items-center justify-center text-7xl font-extrabold text-gray-900">
               <span className="text-5xl">$</span>
               65
+            </div>
+            <div className="justify-center text-5xl font-extrabold text-gray-900">
+              <p className="text-lg font-medium text-white">Per Week</p>
             </div>
           </div>
         </div>
