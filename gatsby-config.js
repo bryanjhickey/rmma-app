@@ -27,6 +27,14 @@ module.exports = {
       __key: 'images',
     },
     {
+      resolve: `gatsby-source-google-places`,
+      options: {
+        placeIds: process.env.GOOGLE_PLACES_ID,
+        apiKey: process.env.GOOGLE_API_KEY,
+        language: 'en-US', // optional, defaults to en-US
+      },
+    },
+    {
       resolve: 'gatsby-source-sanity',
       options: {
         projectId: process.env.SANITY_PROJECT_ID,

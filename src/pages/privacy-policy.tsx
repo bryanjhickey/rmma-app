@@ -27,7 +27,7 @@ export default function Logo() {
             website of The Office of the Australian Information Commissioner at
             {` `}
             <a
-              className="font-normal underline hover:text-green-600"
+              className="... font-normal underline after:content-['_↗'] hover:text-green-600"
               href="https://www.aoic.gov.au"
             >
               www.aoic.gov.au
@@ -157,7 +157,7 @@ export default function Logo() {
               <br />
               Kensington Vic
               <br />
-              3021
+              3031
             </p>
           </address>
           <p>

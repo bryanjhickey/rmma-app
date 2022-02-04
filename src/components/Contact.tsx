@@ -14,7 +14,7 @@ export default function Contact() {
             <address className="not-italic text-gray-800">
               <p className="md:mb-2">3/60 Stubbs Street</p>
               <p className="md:mb-2">Kensington VIC</p>
-              <p className="md:mb-2">3021</p>
+              <p className="md:mb-2">3031</p>
               <p className="mt-4 mb-2 md:mt-0">
                 <a
                   className="underline hover:text-green-600"

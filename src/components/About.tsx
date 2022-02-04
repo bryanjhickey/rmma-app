@@ -15,9 +15,9 @@ export default function About() {
             Martial Arts.
           </p>
           <p className="mb-4 text-base">
-            Founded in 2010 by Jamie Murray and John Mirrabella, the academy is
-            a community that celebrates people and culture, skill development
-            and great training experiences.
+            Founded in 2010 by Jamie Murray and John Mirabella, the academy is a
+            community that celebrates people and culture, skill development and
+            great training experiences.
           </p>
           <p className="mb-4 text-base">
             People come for the training but they stay for the community.

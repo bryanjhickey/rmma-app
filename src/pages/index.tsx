@@ -1,6 +1,7 @@
 import About from '@/components/About';
 import Classes from '@/components/Classes';
 import CovidSafe from '@/components/CovidSafe';
+// import ReviewSection from '@/components/ReviewSection';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import Memberships from '@/components/Memberships';
@@ -13,6 +14,7 @@ export default function Home({ data }) {
   const classList = data.classList.nodes;
   const memberships = data.memberships.nodes;
   const { site } = data;
+  // const reviews = data.reviews.nodes;
 
   return (
     <Layout>
@@ -28,6 +30,7 @@ export default function Home({ data }) {
       />
       <Hero hero={hero} />
       <About />
+      {/* <ReviewSection reviews={reviews} /> */}
       <Memberships memberships={memberships} />
       <Classes sessions={classList} />
       <CovidSafe />
@@ -67,6 +70,20 @@ export const query = graphql`
       keywords
       description
       author
+    }
+    reviews: allGooglePlacesReview(
+      sort: { fields: time, order: DESC }
+      limit: 4
+    ) {
+      nodes {
+        author_name
+        author_url
+        rating
+        profile_photo_url
+        text
+        id
+        relative_time_description
+      }
     }
   }
 `;
