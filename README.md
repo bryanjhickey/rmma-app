@@ -7,7 +7,7 @@
 
   <img alt="License" src="https://img.shields.io/github/license/bryanjhickey/rmma-app?style=for-the-badge&color=24B36B&labelColor=000000">
 
-  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
+  <a href="https://twitter.com/intent/follow?screen_name=bryanjhickey">
     <img src="https://img.shields.io/twitter/follow/bryanjhickey?style=for-the-badge&color=24B36B&labelColor=000000" alt="Follow @bryanjhickey" />
   </a>
 </p>
