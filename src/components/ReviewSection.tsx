@@ -49,12 +49,13 @@ export default function ReviewSection({ reviews, placeData }) {
                 {` `}
                 <span className="font-bold text-green-600">{place.rating}</span>
                 {` `}
-                stars (
+                stars (from
+                {` `}
                 <span className="font-bold text-green-600">
                   {place.user_ratings_total}
                 </span>
                 {` `}
-                Reviews).
+                reviews).
               </p>
             </div>
           ))}
