@@ -5,10 +5,10 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/gatsby-starter-ts?style=for-the-badge&color=24B36B&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/github/license/bryanjhickey/rmma-app?style=for-the-badge&color=24B36B&labelColor=000000">
 
   <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
-    <img src="https://img.shields.io/twitter/follow/jpedroschmitz?style=for-the-badge&color=24B36B&labelColor=000000" alt="Follow @jpedroschmitz" />
+    <img src="https://img.shields.io/twitter/follow/bryanjhickey?style=for-the-badge&color=24B36B&labelColor=000000" alt="Follow @bryanjhickey" />
   </a>
 </p>
 
@@ -31,20 +31,21 @@ No plugins installed, great for advanced users.
 
 ## 🚀 Getting started
 
-The best way to start with this template is using the Gatsby CLI.
-
-```
-npx gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
-```
-
-If you prefer you can clone this repository and run the following commands inside the project folder:
+Clone this repository and run the following commands inside the project folder:
 
 > By default, this starter uses Yarn, but this choice is yours. If you'd like to switch to npm, delete the `yarn.lock` file, install the dependencies with `npm install`, and change the CI workflows, Husky Git hooks, and lint-staged steps to use npm commands.
 
+Website
 1. `yarn`;
 2. `yarn start`;
 
-To view the project you can open `http://localhost:8000`.
+Sanity Studio
+1. `cd ./studio`
+2. `sanity start`
+
+To view the website open `http://localhost:8000`.
+To view the website graphql open `http://localhost:8000/___graphql`.
+To view the sanity studio open `http://localhost:3333`
 
 ## 🤝 Contributing
 
@@ -61,4 +62,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Made with ♥ by João Pedro Schmitz
+Made with ♥ by Bryan James Hickey

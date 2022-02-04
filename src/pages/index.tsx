@@ -1,7 +1,7 @@
 import About from '@/components/About';
 import Classes from '@/components/Classes';
 import CovidSafe from '@/components/CovidSafe';
-// import ReviewSection from '@/components/ReviewSection';
+import ReviewSection from '@/components/ReviewSection';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import Memberships from '@/components/Memberships';
@@ -14,7 +14,8 @@ export default function Home({ data }) {
   const classList = data.classList.nodes;
   const memberships = data.memberships.nodes;
   const { site } = data;
-  // const reviews = data.reviews.nodes;
+  const reviews = data.reviews.nodes;
+  const placeData = data.placeData.nodes;
 
   return (
     <Layout>
@@ -30,7 +31,7 @@ export default function Home({ data }) {
       />
       <Hero hero={hero} />
       <About />
-      {/* <ReviewSection reviews={reviews} /> */}
+      <ReviewSection reviews={reviews} placeData={placeData} />
       <Memberships memberships={memberships} />
       <Classes sessions={classList} />
       <CovidSafe />
@@ -60,7 +61,7 @@ export const query = graphql`
       sort: { order: ASC, fields: _updatedAt }
     ) {
       nodes {
-        _id
+        id
         title
         shortDescription
       }
@@ -83,6 +84,12 @@ export const query = graphql`
         text
         id
         relative_time_description
+      }
+    }
+    placeData: allGooglePlacesPlace {
+      nodes {
+        user_ratings_total
+        rating
       }
     }
   }

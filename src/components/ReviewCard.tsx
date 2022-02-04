@@ -7,8 +7,8 @@ type ReviewCardProps = {
   id: string;
   name: string;
   reviewLink: string;
-  text: string;
   rating: number;
+  text: string;
   time: string;
   darkSection: boolean;
 };
@@ -53,7 +53,7 @@ export function ReviewCard({
       transition={{ type: `spring` }}
       variants={CardVariants}
       key={id}
-      className="mt-6 md:flex md:flex-grow md:flex-col"
+      className="mt-12 md:flex md:flex-grow md:flex-col"
     >
       <div
         className={`md:flex-grow ${
@@ -67,12 +67,12 @@ export function ReviewCard({
             darkSection ? `text-white hover:text-green-500` : `text-gray-700`
           }`}
         >
-          <div className="mb-6 border-b-2 border-gray-300 py-6">
+          <div className="mt-2 pb-6">
             <h4 className="font-bold">{name}</h4>
             <p className="text-xs">({time})</p>
           </div>
         </a>
-        <p className="text-sm font-normal">{text}</p>
+        <p className="text-xs font-normal">{text}</p>
       </div>
     </motion.blockquote>
   );
