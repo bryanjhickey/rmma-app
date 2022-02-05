@@ -23,7 +23,7 @@ export default function Memberships({ memberships }) {
           <div className="grid grid-cols-1 gap-y-12 text-gray-700 md:grid-cols-2 md:gap-x-12 md:gap-y-24">
             {memberships.map((membership) => (
               <TextCard
-                id={membership.id}
+                key={membership.id}
                 title={membership.title}
                 overview={membership.shortDescription}
                 darkSection={false}

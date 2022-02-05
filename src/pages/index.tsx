@@ -26,7 +26,6 @@ export default function Home({ data }) {
         keywords={site.keywords || []}
         title={site.title || ``}
         image={site.image || ``}
-        bodyAttr={site.bodyAttr || ``}
         gradient={site.gradient || ``}
       />
       <Hero hero={hero} />

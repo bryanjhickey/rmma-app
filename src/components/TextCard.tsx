@@ -3,13 +3,12 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 type TextCardProps = {
-  id: string;
   title: string;
   overview: string;
   darkSection: boolean;
 };
 
-export function TextCard({ id, title, overview, darkSection }: TextCardProps) {
+export function TextCard({ title, overview, darkSection }: TextCardProps) {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -40,7 +39,6 @@ export function TextCard({ id, title, overview, darkSection }: TextCardProps) {
       animate={controls}
       transition={{ type: `spring` }}
       variants={CardVariants}
-      key={id}
       className="text-lg leading-6"
     >
       <h3
