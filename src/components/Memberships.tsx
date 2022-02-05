@@ -7,7 +7,7 @@ export default function Memberships({ memberships }) {
   return (
     <div id="memberships" className="container py-12 md:py-20 lg:py-24">
       <div className="pb-12">
-        <h2 className="text-base font-semibold uppercase tracking-wide text-green-600">
+        <h2 className="text-base font-semibold uppercase tracking-wide text-green-800">
           Membership
         </h2>
         <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -41,7 +41,7 @@ export default function Memberships({ memberships }) {
               65
             </div>
             <div className="justify-center text-5xl font-extrabold text-gray-900">
-              <p className="text-lg font-medium text-white">Per Week</p>
+              <p className="text-xl font-medium text-white">Per Week</p>
             </div>
           </div>
         </div>

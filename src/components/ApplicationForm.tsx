@@ -126,7 +126,7 @@ export default function ApplicationForm() {
 
           {/* Contact form */}
           <div className="bg-gray-200 py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-            <h3 className="text-base font-semibold uppercase tracking-wide text-green-600">
+            <h3 className="text-lg font-semibold uppercase tracking-wide text-green-800">
               Begin your application.
             </h3>
 
