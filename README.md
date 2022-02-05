@@ -1,17 +1,15 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/26466516/107675788-31f54e00-6c77-11eb-96c9-58fd8a4c69ac.png" alt="Gatsby and TypeScript">
+  <img src="./banner_graphic.png" alt="Gatsby and TypeScript and Tailwind CSS and Sanity">
 </p>
-
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000" alt="PRs welcome!" />
+  <a href="https://app.netlify.com/sites/zen-brown-377382/deploys"></a><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/4c3d571a-7ca1-4330-b04d-4ec0583ed818/deploy-status"></a>
+  <a href="https://twitter.com/intent/user?screen_name=bryanjhickey"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bryanjhickey?style=social"></a>
+  <a href="https://img.shields.io/w3c-validation/html?style=plastic&targetUrl=https%3A%2F%2Fzen-brown-377382.netlify.app%2F"><img alt="W3C Validation" src="https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fzen-brown-377382.netlify.app%2F"></a>
+  <a href="https://github.com/bryanjhickey/rmma-app/blob/5de58acb8c104a406722a4a90e82c26af7aa5109/LICENSE.md"><img alt="GitHub Licence" src="https://img.shields.io/github/license/bryanjhickey/rmma-app"></a>
+  <a href="https://observatory.mozilla.org/analyze/zen-brown-377382.netlify.app?third-party=false"><img alt="Mozilla HTTP Observatory Grade" src="https://img.shields.io/mozilla-observatory/grade-score/zen-brown-377382.netlify.app?publish"></a>
 
-  <img alt="License" src="https://img.shields.io/github/license/bryanjhickey/rmma-app?style=for-the-badge&color=24B36B&labelColor=000000">
 
-  <a href="https://twitter.com/intent/follow?screen_name=bryanjhickey">
-    <img src="https://img.shields.io/twitter/follow/bryanjhickey?style=for-the-badge&color=24B36B&labelColor=000000" alt="Follow @bryanjhickey" />
-  </a>
 </p>
-
 <br>
 
 A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start 🔥
@@ -36,8 +34,8 @@ Clone this repository and run the following commands inside the project folder:
 > By default, this starter uses Yarn, but this choice is yours. If you'd like to switch to npm, delete the `yarn.lock` file, install the dependencies with `npm install`, and change the CI workflows, Husky Git hooks, and lint-staged steps to use npm commands.
 
 Website
-1. `yarn`;
-2. `yarn start`;
+1. `yarn`
+2. `yarn start`
 
 Sanity Studio
 1. `cd ./studio`
