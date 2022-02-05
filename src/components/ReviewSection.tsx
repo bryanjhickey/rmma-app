@@ -14,7 +14,7 @@ export default function ReviewSection({ reviews, placeData }) {
             about Renegade.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-12">
           {reviews.map((review) => (
             <div key={review.id} className="col-span-1">
               <ReviewCard

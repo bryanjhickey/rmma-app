@@ -53,26 +53,26 @@ export function ReviewCard({
       transition={{ type: `spring` }}
       variants={CardVariants}
       key={id}
-      className="mt-12 md:flex md:flex-grow md:flex-col"
+      className="mt-6 md:flex md:flex-grow md:flex-col lg:mt-12"
     >
       <div
         className={`md:flex-grow ${
           darkSection ? `text-white` : `text-gray-700`
         }`}
       >
-        <StarRating rating={rating} />
         <a
           href={reviewLink}
           className={`text-base text-gray-700 hover:text-green-600 ${
             darkSection ? `text-white hover:text-green-500` : `text-gray-700`
           }`}
         >
-          <div className="mt-2 pb-6">
-            <h4 className="font-bold">{name}</h4>
+          <div className="mt-2 pb-2">
+            <h4 className="font-bold capitalize">{name}</h4>
             <p className="text-xs">({time})</p>
           </div>
         </a>
-        <p className="text-xs font-normal">{text}</p>
+        <StarRating rating={rating} />
+        <p className="mt-2 text-xs font-normal lg:mt-6">{text}</p>
       </div>
     </motion.blockquote>
   );
