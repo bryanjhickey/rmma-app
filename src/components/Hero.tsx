@@ -38,7 +38,7 @@ export default function Hero({ hero }) {
               <GatsbyImage
                 className="h-full w-full object-cover"
                 image={hero.image.asset.gatsbyImageData}
-                alt={hero.title}
+                alt="Jamie Murray standing on front of many seated students talking with one hand raised"
               />
               <div className="absolute inset-0 bg-gray-800 opacity-50 mix-blend-multiply" />
             </div>

@@ -67,7 +67,7 @@ export function ReviewCard({
           }`}
         >
           <div className="mt-2 pb-2">
-            <h4 className="font-bold capitalize">{name}</h4>
+            <h3 className="font-bold capitalize">{name}</h3>
             <p className="text-xs">({time})</p>
           </div>
         </a>
