@@ -211,7 +211,7 @@ export default function ApplicationForm() {
               <div className="sm:col-span-2 sm:flex sm:justify-end">
                 <button
                   type="submit"
-                  className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-6 py-3 text-sm text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:w-auto"
+                  className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-green-800 px-6 py-3 text-sm font-bold text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:w-auto"
                 >
                   Submit
                 </button>
