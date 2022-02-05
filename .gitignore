@@ -15,6 +15,7 @@ public/
 # misc
 .DS_Store
 .env.development
+.env.production
 
 # debug
 npm-debug.log*
