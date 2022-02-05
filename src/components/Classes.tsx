@@ -20,7 +20,7 @@ export default function ClassesList({ sessions }) {
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-y-12 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-3">
           {sessions.map((session) => (
             <TextCard
-              id={session.id}
+              key={session.id}
               title={session.title}
               overview={session.overview}
               darkSection

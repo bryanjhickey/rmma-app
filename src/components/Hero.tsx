@@ -40,7 +40,7 @@ export default function Hero({ hero }) {
                 image={hero.image.asset.gatsbyImageData}
                 alt="Jamie Murray standing on front of many seated students talking with one hand raised"
               />
-              <div className="absolute inset-0 bg-gray-800 opacity-50 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gray-800 opacity-25 mix-blend-multiply" />
             </div>
             <motion.div
               ref={ref}

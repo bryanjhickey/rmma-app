@@ -13,15 +13,6 @@ const detailsQuery = graphql`
     }
   }
 `;
-type NameMetaObj = {
-  name: string;
-  content: string;
-};
-
-type PropertyMetaObj = {
-  property: string;
-  content: string;
-};
 interface ImageObject {
   name: string;
   asset: string;
@@ -34,7 +25,6 @@ interface GradientObject {
 type SeoProps = {
   description: string;
   lang: string;
-  meta: ConcatArray<NameMetaObj | PropertyMetaObj>;
   keywords: string[];
   title: string;
   image: ImageObject;
@@ -44,7 +34,6 @@ type SeoProps = {
 function SEO({
   description,
   lang,
-  meta,
   keywords,
   title,
   image,
@@ -73,49 +62,49 @@ function SEO({
             titleTemplate={
               pageTitle === siteTitle ? siteTitle : `%s | ${siteTitle}`
             }
-            meta={[
-              {
-                name: `google-site-verification`,
-                content: `Z3-w5CTtpXNnAGFtfoXy6lt8Hhe5sE8saZF5Bv4DBwE`,
-              },
-              {
-                name: `description`,
-                content: metaDescription,
-              },
-              {
-                property: `og:title`,
-                content: title,
-              },
-              {
-                property: `og:description`,
-                content: metaDescription,
-              },
-              {
-                property: `og:type`,
-                content: `website`,
-              },
-              {
-                property: `og:image`,
-                content: metaImage,
-              },
-              {
-                name: `twitter:card`,
-                content: `summary`,
-              },
-              {
-                name: `twitter:creator`,
-                content: siteAuthor,
-              },
-              {
-                name: `twitter:title`,
-                content: title,
-              },
-              {
-                name: `twitter:description`,
-                content: metaDescription,
-              },
-            ]
-              .concat(
+            meta={
+              [
+                {
+                  name: `google-site-verification`,
+                  content: `Z3-w5CTtpXNnAGFtfoXy6lt8Hhe5sE8saZF5Bv4DBwE`,
+                },
+                {
+                  name: `description`,
+                  content: metaDescription,
+                },
+                {
+                  property: `og:title`,
+                  content: title,
+                },
+                {
+                  property: `og:description`,
+                  content: metaDescription,
+                },
+                {
+                  property: `og:type`,
+                  content: `website`,
+                },
+                {
+                  property: `og:image`,
+                  content: metaImage,
+                },
+                {
+                  name: `twitter:card`,
+                  content: `summary`,
+                },
+                {
+                  name: `twitter:creator`,
+                  content: siteAuthor,
+                },
+                {
+                  name: `twitter:title`,
+                  content: title,
+                },
+                {
+                  name: `twitter:description`,
+                  content: metaDescription,
+                },
+              ].concat(
                 keywords && keywords.length > 0
                   ? {
                       name: `keywords`,
@@ -123,7 +112,8 @@ function SEO({
                     }
                   : [],
               )
-              .concat(meta)}
+              // .concat(meta)
+            }
           >
             {gradient && gradient.from && gradient.to && (
               <style type="text/css">{`

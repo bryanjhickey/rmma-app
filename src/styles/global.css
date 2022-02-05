@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a:focus, button:focus {
+    @apply outline-none;
+    @apply ring;
+    @apply ring-offset-4;
+    @apply ring-green-700/50;
+      }
+}
