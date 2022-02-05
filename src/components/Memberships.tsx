@@ -33,7 +33,7 @@ export default function Memberships({ memberships }) {
         </div>
         <div className="col-span-1 xl:col-start-3">
           <div className="h-full bg-green-600 p-8 text-center shadow-2xl lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12">
-            <p className="text-2xl font-medium leading-6 text-white">
+            <p className="text-2xl font-bold leading-6 text-white">
               Membership
             </p>
             <div className="mt-4 -ml-8 flex items-center justify-center text-7xl font-extrabold text-gray-900">
@@ -41,7 +41,7 @@ export default function Memberships({ memberships }) {
               65
             </div>
             <div className="justify-center text-5xl font-extrabold text-gray-900">
-              <p className="text-2xl font-medium text-white">Per Week</p>
+              <p className="text-2xl font-bold text-white">Per Week</p>
             </div>
           </div>
         </div>
