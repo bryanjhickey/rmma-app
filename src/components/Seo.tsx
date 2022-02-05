@@ -13,14 +13,32 @@ const detailsQuery = graphql`
     }
   }
 `;
+type NameMetaObj = {
+  name: string;
+  content: string;
+};
+
+type PropertyMetaObj = {
+  property: string;
+  content: string;
+};
+interface ImageObject {
+  name: string;
+  asset: string;
+}
+interface GradientObject {
+  from: string;
+  to: string;
+}
+
 type SeoProps = {
   description: string;
   lang: string;
-  meta: string[];
+  meta: ConcatArray<NameMetaObj | PropertyMetaObj>;
   keywords: string[];
   title: string;
-  image: object;
-  gradient: string;
+  image: ImageObject;
+  gradient: GradientObject;
 };
 
 function SEO({
