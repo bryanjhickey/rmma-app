@@ -71,7 +71,7 @@ export default function ApplicationForm() {
                     gradientUnits="userSpaceOnUse"
                   >
                     <stop stopColor="#fff" />
-                    <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                    <stop offset="1" stopColor="#fff" stopOpacity="0" />
                   </linearGradient>
                 </defs>
               </svg>

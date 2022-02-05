@@ -3,7 +3,25 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { imageUrlFor } from '../lib/image-url';
 
-// https://ogp.me
+const detailsQuery = graphql`
+  query DefaultSEOQuery {
+    site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
+      title
+      keywords
+      description
+      author
+    }
+  }
+`;
+type SeoProps = {
+  description: string;
+  lang: string;
+  meta: string[];
+  keywords: string[];
+  title: string;
+  image: object;
+  gradient: string;
+};
 
 function SEO({
   description,
@@ -12,9 +30,8 @@ function SEO({
   keywords,
   title,
   image,
-  bodyAttr,
   gradient,
-}) {
+}: SeoProps) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -33,7 +50,6 @@ function SEO({
 
         return (
           <Helmet
-            bodyAttributes={bodyAttr}
             htmlAttributes={{ lang }}
             title={pageTitle}
             titleTemplate={
@@ -106,14 +122,3 @@ function SEO({
 }
 
 export default SEO;
-
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
-      title
-      keywords
-      description
-      author
-    }
-  }
-`;

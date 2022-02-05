@@ -23,79 +23,81 @@ function OutlinedStar() {
 }
 function StarRating({ rating }: StarRatingProps) {
   return (
-    <ul className="flex">
-      <div className="sr-only">{rating} star rating</div>
-      <li>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="star"
-          className="mr-1 w-4 text-yellow-500"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-        >
-          {rating >= 1 ? <FilledStar /> : <OutlinedStar />}
-        </svg>
-      </li>
-      <li>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="star"
-          className="mr-1 w-4 text-yellow-500"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-        >
-          {rating >= 2 ? <FilledStar /> : <OutlinedStar />}
-        </svg>
-      </li>
-      <li>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="star"
-          className="mr-1 w-4 text-yellow-500"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-        >
-          {rating >= 3 ? <FilledStar /> : <OutlinedStar />}
-        </svg>
-      </li>
-      <li>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="far"
-          data-icon="star"
-          className="mr-1 w-4 text-yellow-500"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-        >
-          {rating >= 4 ? <FilledStar /> : <OutlinedStar />}
-        </svg>
-      </li>
-      <li>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="far"
-          data-icon="star"
-          className="w-4 text-yellow-500"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-        >
-          {rating >= 5 ? <FilledStar /> : <OutlinedStar />}
-        </svg>
-      </li>
-    </ul>
+    <>
+      <p className="sr-only">{rating} star rating</p>
+      <ul className="flex">
+        <li>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="star"
+            className="mr-1 w-4 text-yellow-500"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            {rating >= 1 ? <FilledStar /> : <OutlinedStar />}
+          </svg>
+        </li>
+        <li>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="star"
+            className="mr-1 w-4 text-yellow-500"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            {rating >= 2 ? <FilledStar /> : <OutlinedStar />}
+          </svg>
+        </li>
+        <li>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="star"
+            className="mr-1 w-4 text-yellow-500"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            {rating >= 3 ? <FilledStar /> : <OutlinedStar />}
+          </svg>
+        </li>
+        <li>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="far"
+            data-icon="star"
+            className="mr-1 w-4 text-yellow-500"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            {rating >= 4 ? <FilledStar /> : <OutlinedStar />}
+          </svg>
+        </li>
+        <li>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="far"
+            data-icon="star"
+            className="w-4 text-yellow-500"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            {rating >= 5 ? <FilledStar /> : <OutlinedStar />}
+          </svg>
+        </li>
+      </ul>
+    </>
   );
 }
 export default StarRating;
