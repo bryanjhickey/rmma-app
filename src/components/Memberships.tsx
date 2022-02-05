@@ -41,7 +41,7 @@ export default function Memberships({ memberships }) {
               65
             </div>
             <div className="justify-center text-5xl font-extrabold text-gray-900">
-              <p className="text-xl font-medium text-white">Per Week</p>
+              <p className="text-2xl font-medium text-white">Per Week</p>
             </div>
           </div>
         </div>
