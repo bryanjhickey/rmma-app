@@ -25,7 +25,7 @@ export default function Footer() {
                 <FaFacebook size={24} />
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/renegade.mma/"
                 rel="noreferrer"
                 target="_blank"
                 className="text- text-gray-700 hover:text-green-600"
