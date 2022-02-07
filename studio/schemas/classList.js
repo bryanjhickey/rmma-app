@@ -7,7 +7,7 @@ export default {
   name: 'classList',
   title: 'Classes',
   type: 'document',
-    orderings: [orderRankOrdering],
+  orderings: [orderRankOrdering],
 
   fields: [
     orderRankField({ type: 'title' }),

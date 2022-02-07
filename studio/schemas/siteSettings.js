@@ -1,31 +1,21 @@
-import { MdSettings } from 'react-icons/md'
-
 export default {
   name: 'siteSettings',
-  title: 'Site Settings',
   type: 'document',
-  // You probably want to uncomment the next line once you've made a siteSettings document in the Studio. This will remove the settings document type from the create-menus.
-__experimental_actions: ['update', 'publish', 'create', 'delete'  ],
+  title: 'Site Settings',
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'title',
-      title: 'Title',
-      type: 'string'
+      type: 'string',
+      title: 'Title'
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'text'
+      title: 'Open graph',
+      name: 'openGraph',
+      description: 'These will be the default meta tags on all pages that have not set their own',
+      type: 'openGraph'
     },
-    // {
-    //   name: 'infoBanner',
-    //   title: 'Set Info Banner for site',
-    //   type: 'reference',
-    //   to: [
-    //     {type: 'infoBanner'}
-    //   ]
-    // },
-    {
+     {
       name: 'keywords',
       title: 'Keywords',
       type: 'array',
@@ -35,9 +25,16 @@ __experimental_actions: ['update', 'publish', 'create', 'delete'  ],
       }
     },
     {
-      name: 'author',
-      title: 'Author',
-      type: 'string'
+      type: 'color',
+      name: 'primaryColor',
+      title: 'Primary brand color',
+      description: 'Used to generate the primary accent color for websites, press materials, etc'
+    },
+    {
+      type: 'color',
+      name: 'secondaryColor',
+      title: 'Secondary brand color',
+      description: 'Used to generate the secondary accent color for websites, press materials, etc'
     }
   ]
 }

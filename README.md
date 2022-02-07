@@ -7,12 +7,18 @@
   <a href="https://img.shields.io/w3c-validation/html?style=plastic&targetUrl=https%3A%2F%2Fzen-brown-377382.netlify.app%2F"><img alt="W3C Validation" src="https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fzen-brown-377382.netlify.app%2F"></a>
   <a href="https://github.com/bryanjhickey/rmma-app/blob/5de58acb8c104a406722a4a90e82c26af7aa5109/LICENSE.md"><img alt="GitHub Licence" src="https://img.shields.io/github/license/bryanjhickey/rmma-app"></a>
   <a href="https://observatory.mozilla.org/analyze/zen-brown-377382.netlify.app?third-party=false"><img alt="Mozilla HTTP Observatory Grade" src="https://img.shields.io/mozilla-observatory/grade-score/zen-brown-377382.netlify.app?publish"></a>
+</p>
 
-
+<p align="center">
+  <img alt="Lighthouse PWA" src="./test_results/lighthouse_pwa.svg">
+  <img alt="Lighthouse Performance" src="./test_results/lighthouse_performance.svg">
+  <img alt="Lighthouse SEO" src="./test_results/lighthouse_seo.svg">
+  <img alt="Lighthouse Best Practice" src="./test_results/lighthouse_best-practices.svg">
+  <img alt="Lighthouse Accessibility" src="./test_results/lighthouse_accessibility.svg">
 </p>
 <br>
 
-A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start 🔥
+A TypeScript starter for Gatsby with Sanity. Exactly what's needed to 🔥
 
 No plugins installed, great for advanced users.
 

@@ -4,7 +4,7 @@
     "name": "The Renegade Academy"
   },
   "api": {
-    "projectId": "pnpeiz8z",
+    "projectId": "vddb183j",
     "dataset": "production"
   },
   "plugins": [
@@ -12,7 +12,9 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "@sanity/orderable-document-list"
+    "@sanity/orderable-document-list",
+    "@sanity/color-input",
+    "color-picker"
   ],
   "env": {
     "development": {

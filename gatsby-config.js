@@ -45,5 +45,17 @@ module.exports = {
         graphqlTag: 'default',
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Renegade MMA + BJJ | Brazilian Jiu Jitsu and Mixed Martial Arts Gym in Kensington, Melbourne',
+        short_name: 'Renegade MMA + BJJ',
+        start_url: '/',
+        background_color: '#1f2937',
+        theme_color: '#32a852',
+        display: 'standalone',
+        icon: './src/assets/images/logo.svg',
+      },
+    },
   ],
 };

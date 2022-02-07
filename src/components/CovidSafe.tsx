@@ -8,7 +8,7 @@ export default function CovidSafe() {
         <div className="col-span-1">
           <StaticImage
             className="object-fill"
-            src="../assets/images/clean-gym.jpeg"
+            src="../assets/images/facility.jpg"
             alt="Renegade MMA Covid Clean Gym"
             placeholder="blurred"
             width={673}

@@ -57,5 +57,6 @@ export default () =>
             S.documentTypeList('testimony')
           ),
           orderableDocumentListDeskItem({type: 'classList', title: 'Order Classes for Display', hidden: false}),
+            orderableDocumentListDeskItem({type: 'membershipBenefits', title: 'Order Membership Benefits for Display', hidden: false}),
       ...S.documentTypeListItems().filter(hiddenDocTypes),
     ])

@@ -47,7 +47,7 @@ export const query = graphql`
         overview
       }
     }
-    hero: sanityBanner(_id: { eq: "e41971a1-046b-4dde-bf72-319fdcef2d3e" }) {
+    hero: sanityBanner(_id: { eq: "a4d069b4-a29d-4e64-8e5c-5037040e44ea" }) {
       title
       copy
       image {
@@ -57,7 +57,7 @@ export const query = graphql`
       }
     }
     memberships: allSanityMembershipBenefits(
-      sort: { order: ASC, fields: _updatedAt }
+      sort: { fields: orderRank, order: ASC }
     ) {
       nodes {
         id
@@ -68,8 +68,10 @@ export const query = graphql`
     site: sanitySiteSettings {
       title
       keywords
-      description
-      author
+      openGraph {
+        title
+        description
+      }
     }
     reviews: allGooglePlacesReview(
       sort: { fields: time, order: DESC }
