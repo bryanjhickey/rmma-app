@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="cols-span-1 md:col-start-4">
             <div className="mt-8 flex space-x-6">
               <a
-                href="/"
+                href="https://www.facebook.com/RMMA3031/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 hover:text-green-600"
