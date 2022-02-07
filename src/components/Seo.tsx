@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, keywords, title, image, gradient }) {
             meta={[
               {
                 name: `google-site-verification`,
-                content: `0HAG8S5BTJXdokpC72-VMI7mXX3U1pFw5mhfgirP5nk`,
+                content: `72F5yoegMoxfGScdFdfK1eC9ODcNXzF4hnkZgTDTaBE`,
               },
               {
                 name: `description`,
