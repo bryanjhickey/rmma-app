@@ -5,10 +5,10 @@ import '../styles/global.css';
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="relative">
       <NavBar />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }

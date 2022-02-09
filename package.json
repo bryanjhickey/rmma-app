@@ -30,6 +30,7 @@
     ]
   },
   "dependencies": {
+    "@headlessui/react": "1.4.3",
     "@react-icons/all-files": "4.1.0",
     "@sanity/image-url": "1.0.1",
     "@tailwindcss/aspect-ratio": "0.4.0",
