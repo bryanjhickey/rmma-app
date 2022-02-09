@@ -8,6 +8,7 @@ import Memberships from '@/components/Memberships';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
+import fbImage from '../assets/images/fb-banner.png';
 
 export default function Home({ data }) {
   const { hero } = data;
@@ -32,7 +33,7 @@ export default function Home({ data }) {
         <meta property="og:description" content={site.openGraph.description} />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content={site.primaryColor.hex} />
-        <meta property="og:image" content="/fb-banner.png" />
+        <meta property="og:image" content={fbImage} />
         <meta name="keywords" content={site.keywords} />
         {site && site.primaryColor && site.secondaryColor && (
           <style type="text/css">{`
