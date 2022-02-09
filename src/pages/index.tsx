@@ -5,7 +5,6 @@ import ReviewSection from '@/components/ReviewSection';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import Memberships from '@/components/Memberships';
-// import Seo from '@/components/Seo';
 import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -18,7 +17,6 @@ export default function Home({ data }) {
   const reviews = data.reviews.nodes;
   const placeData = data.placeData.nodes;
   const url = process.env.SITE_URL;
-  const fbBanner = `${url}assets/images/fb-banner.png`;
 
   return (
     <Layout>
@@ -34,7 +32,7 @@ export default function Home({ data }) {
         <meta property="og:description" content={site.openGraph.description} />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content={site.primaryColor.hex} />
-        <meta property="og:image" content={fbBanner} />
+        <meta property="og:image" content="/fb-banner.png" />
         <meta name="keywords" content={site.keywords} />
         {site && site.primaryColor && site.secondaryColor && (
           <style type="text/css">{`
