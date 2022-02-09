@@ -24,7 +24,7 @@ export default function Home({ data }) {
       <Helmet title={site.openGraph.title}>
         <meta
           name="google-site-verification"
-          content="72F5yoegMoxfGScdFdfK1eC9ODcNXzF4hnkZgTDTaBE"
+          content="Z09SEQl58Pd5-PoXPb_8q-epy-Y6_UI0omw3Jq1S5WI"
         />
         <meta name="description" content={site.openGraph.description} />
         <meta property="og:url" content={url} />
