@@ -5,9 +5,10 @@ import ReviewSection from '@/components/ReviewSection';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import Memberships from '@/components/Memberships';
-import Seo from '@/components/Seo';
+// import Seo from '@/components/Seo';
 import { graphql } from 'gatsby';
 import React from 'react';
+import Helmet from 'react-helmet';
 
 export default function Home({ data }) {
   const { hero } = data;
@@ -16,18 +17,34 @@ export default function Home({ data }) {
   const { site } = data;
   const reviews = data.reviews.nodes;
   const placeData = data.placeData.nodes;
+  const url = process.env.SITE_URL;
+  const fbBanner = `${url}assets/images/fb-banner.png`;
 
   return (
     <Layout>
-      <Seo
-        description={site.description || ``}
-        lang={site.lang || `en`}
-        meta={site.meta || ``}
-        keywords={site.keywords || []}
-        title={site.title || ``}
-        image={site.image || ``}
-        gradient={site.gradient || ``}
-      />
+      <Helmet title={site.openGraph.title}>
+        <meta
+          name="google-site-verification"
+          content="72F5yoegMoxfGScdFdfK1eC9ODcNXzF4hnkZgTDTaBE"
+        />
+        <meta name="description" content={site.openGraph.description} />
+        <meta property="og:url" content={url} />
+
+        <meta property="og:title" content={site.openGraph.title} />
+        <meta property="og:description" content={site.openGraph.description} />
+        <meta property="og:type" content="website" />
+        <meta name="theme-color" content={site.primaryColor.hex} />
+        <meta property="og:image" content={fbBanner} />
+        <meta name="keywords" content={site.keywords} />
+        {site && site.primaryColor && site.secondaryColor && (
+          <style type="text/css">{`
+              .gradient {
+                background: linear-gradient(90deg, ${site.primaryColor.hex} 0%, ${site.secondaryColor.hex} 100%);
+              }
+            `}</style>
+        )}
+        <html lang="en" />
+      </Helmet>
       <Hero hero={hero} />
       <About />
       <ReviewSection reviews={reviews} placeData={placeData} />
@@ -71,6 +88,12 @@ export const query = graphql`
       openGraph {
         title
         description
+      }
+      primaryColor {
+        hex
+      }
+      secondaryColor {
+        hex
       }
     }
     reviews: allGooglePlacesReview(
