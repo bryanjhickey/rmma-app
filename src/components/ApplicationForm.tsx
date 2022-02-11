@@ -226,7 +226,7 @@ export default function ApplicationForm() {
                   Phone
                   <div className="mt-1">
                     <input
-                      type="number"
+                      type="tel"
                       name="phone"
                       id="phone"
                       autoComplete="tel"
