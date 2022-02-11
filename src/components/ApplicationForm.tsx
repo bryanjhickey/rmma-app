@@ -144,7 +144,7 @@ export default function ApplicationForm() {
                   <input name="bloody-hell" />
                 </label>
               </p>
-              <input type="hidden" name="form-name" value="enquiry" />
+              <input type="hidden" name="form-name" value="enquiry" required />
 
               <div>
                 <label
@@ -159,8 +159,12 @@ export default function ApplicationForm() {
                       id="first_name"
                       autoComplete="given-name"
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-green-500 focus:ring-green-500"
+                      required
                     />
                   </div>
+                  <p className="text-xs italic text-red-500">
+                    Please enter your first name.
+                  </p>
                 </label>
               </div>
               <div>
@@ -176,8 +180,12 @@ export default function ApplicationForm() {
                       id="last_name"
                       autoComplete="family-name"
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-green-500 focus:ring-green-500"
+                      required
                     />
                   </div>
+                  <p className="text-xs italic text-red-500">
+                    Please enter your last name.
+                  </p>
                 </label>
               </div>
               <div>
@@ -193,8 +201,12 @@ export default function ApplicationForm() {
                       type="email"
                       autoComplete="email"
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-green-500 focus:ring-green-500"
+                      required
                     />
                   </div>
+                  <p className="text-xs italic text-red-500">
+                    Please enter your email.
+                  </p>
                 </label>
               </div>
               <div>
@@ -205,14 +217,18 @@ export default function ApplicationForm() {
                   Phone
                   <div className="mt-1">
                     <input
-                      type="text"
+                      type="number"
                       name="phone"
                       id="phone"
                       autoComplete="tel"
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-green-500 focus:ring-green-500"
                       aria-describedby="phone"
+                      required
                     />
                   </div>
+                  <p className="text-xs italic text-red-500">
+                    Please enter your phone number.
+                  </p>
                 </label>
               </div>
               <div className="sm:col-span-2 sm:flex sm:justify-end">
