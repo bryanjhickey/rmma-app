@@ -7194,6 +7194,14 @@ gatsby-plugin-config@1.0.7:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-config/-/gatsby-plugin-config-1.0.7.tgz#65f55decd0925c0231c828be25a314c68d0a01e9"
   integrity sha512-js7zLJcTD+G5ea4rPYHztb+N+KqGo6ax5rGviuTUDdKu0N1oGWp8FuozQrdx7TPKjMv/g5pvMAGrhk5TcPd5tQ==
 
+gatsby-plugin-google-gtag@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-4.7.0.tgz#b6e4b24a8161ef64c9178e2de23f612d2744a787"
+  integrity sha512-h+ZZp49lEaKKB367bmgYPVhTXwwW1s5zZq4Gm1EBJSuOx3Obo17TXXedbxIAQhggiHfIRvt+J/dr5yzcDxlzZQ==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    minimatch "^3.0.4"
+
 gatsby-plugin-image@2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.6.0.tgz#5342507be7fdd0109fc815c0f2906b0407a55e14"
