@@ -34,7 +34,7 @@ export default function ReviewSection({ reviews, placeData }) {
             {` `}
             Tells us what you think.{` `}
             <a
-              href="https://www.google.com/search?q=renagde+mma&oq=renagde+mma&aqs=chrome..69i57j46i13i175i199j0i13j46i13i175i199j0i13l4j0i22i30.4392j1j9&sourceid=chrome&ie=UTF-8#lrd=0x6ad65d191140a833:0xfa85d323f5f6f44,1,,,"
+              href="https://www.google.com/search?q=renegade+mma+bjj&oq=renegade+mma+bjj&aqs=chrome..69i57j46i13i175i199j0i13j46i13i175i199j0i13l4j0i22i30.4392j1j9&sourceid=chrome&ie=UTF-8#lrd=0x6ad65d191140a833:0xfa85d323f5f6f44,1,,,"
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 after:content-['_↗']"
