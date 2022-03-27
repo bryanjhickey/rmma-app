@@ -18,7 +18,7 @@ export default function Memberships({ memberships }) {
           full member. There are no tricks, hidden fees or lock-in contracts.
         </p>
       </div>
-      <div className="mb-24 grid grid-cols-1 gap-x-12 gap-y-12 lg:grid-cols-2 lg:gap-x-12 xl:grid-cols-3">
+      <div className="mb-24 grid grid-cols-1 gap-x-12 gap-y-12 lg:grid-cols-1 lg:gap-x-12 xl:grid-cols-3">
         <div className="col-span-1 xl:col-span-2">
           <div className="grid grid-cols-1 gap-y-12 text-gray-700 md:grid-cols-2 md:gap-x-12 md:gap-y-24">
             {memberships.map((membership) => (

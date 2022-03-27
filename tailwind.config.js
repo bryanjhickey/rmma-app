@@ -1,10 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
- content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-   theme: {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
     extend: {
       fontFamily: {
         sans: ['Gotham Pro', ...defaultTheme.fontFamily.sans],
@@ -14,6 +12,7 @@ module.exports = {
         padding: {
           DEFAULT: '1rem',
           sm: '2rem',
+          md: '1rem',
           lg: '4rem',
           xl: '5rem',
           '2xl': '6rem',
@@ -27,4 +26,4 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
   ],
-}
+};

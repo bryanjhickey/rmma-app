@@ -250,7 +250,7 @@ export default function ApplicationForm() {
                   <div className="mt-1">
                     <textarea
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-green-500 focus:ring-green-500"
-                      name=""
+                      name="message"
                       id="message"
                       cols="30"
                       rows="7"

@@ -4,13 +4,13 @@ export default function Contact() {
   return (
     <div id="contact" className="bg-gray-200 py-24">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <h2 className="text-primary mb-12 text-3xl font-extrabold tracking-tight sm:text-4xl">
               Contact
             </h2>
           </div>
-          <div className="col-span-1 md:col-start-3">
+          <div className="col-span-1 md:col-span-1 md:col-start-1 lg:col-span-1 lg:col-start-2">
             <address className="not-italic text-gray-800">
               <p className="md:mb-2">3/60 Stubbs Street</p>
               <p className="md:mb-2">Kensington VIC</p>
@@ -27,9 +27,9 @@ export default function Contact() {
               </p>
             </address>
           </div>
-          <div className="col-span-1 md:col-start-4">
+          <div className="col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-3">
             <address className="not-italic text-gray-800">
-              <p className="mt-4 mb-2 md:mt-0">
+              <p className="mt-4 mb-2 lg:mt-0">
                 <a
                   className="underline hover:text-green-600"
                   href="tel:+61393721011"

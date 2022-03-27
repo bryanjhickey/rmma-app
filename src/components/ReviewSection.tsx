@@ -14,7 +14,7 @@ export default function ReviewSection({ reviews, placeData }) {
             about Renegade.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-12">
+        <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-12 xl:grid-cols-4">
           {reviews.map((review) => (
             <div key={review.id} className="col-span-1">
               <ReviewCard
@@ -29,7 +29,7 @@ export default function ReviewSection({ reviews, placeData }) {
             </div>
           ))}
         </div>
-        <div className="mt-6 flex justify-between border-t-2 border-gray-800 pt-6 text-sm text-white">
+        <div className="mt-6 justify-between border-t-2 border-gray-800 pt-6 text-sm text-white lg:flex">
           <div>
             {` `}
             Tells us what you think.{` `}
@@ -44,14 +44,14 @@ export default function ReviewSection({ reviews, placeData }) {
           </div>
           {placeData.map((place) => (
             <div key={place.rating}>
-              <p className="text-right">
-                average
+              <p className="my-2 lg:my-0 lg:text-right">
+                Average
                 {` `}
-                <span className="font-bold text-green-600">{place.rating}</span>
+                <span className="text-green-600">{place.rating}</span>
                 {` `}
                 stars (from
                 {` `}
-                <span className="font-bold text-green-600">
+                <span className="text-green-600">
                   {place.user_ratings_total}
                 </span>
                 {` `}
