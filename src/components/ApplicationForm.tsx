@@ -244,9 +244,9 @@ export default function ApplicationForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-900"
+                  className="text-smm block font-medium text-gray-900"
                 >
-                  Why you want to train at Renegade?
+                  Why do you want to train at Renegade?
                   <div className="mt-1">
                     <textarea
                       className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-green-500 focus:ring-green-500"
