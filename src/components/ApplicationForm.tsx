@@ -241,6 +241,23 @@ export default function ApplicationForm() {
                   </p> */}
                 </label>
               </div>
+              <div className="sm:col-span-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-900"
+                >
+                  Why you want to train at Renegade?
+                  <div className="mt-1">
+                    <textarea
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-green-500 focus:ring-green-500"
+                      name=""
+                      id="message"
+                      cols="30"
+                      rows="7"
+                    />
+                  </div>
+                </label>
+              </div>
               <div className="sm:col-span-2 sm:flex sm:justify-end">
                 <button
                   type="submit"
